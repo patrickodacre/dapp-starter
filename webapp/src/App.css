@@ -1,0 +1,67 @@
+.App-metamaskBanner.show {
+    display: block;
+}
+
+.App-metamaskBanner.hide {
+    display: none;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-account {
+    max-width: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid DarkCyan;
+    border-radius: 4px;
+    padding: 0.5rem 2rem;
+}
+
+.App-logo {
+  pointer-events: none;
+}
+
+.App-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.App-nav_left {
+    display: flex;
+    align-items: center;
+}
+
+.App-siteTitle a {
+    text-decoration: none;
+}
+
+.App-logo {
+    max-height: 36px;
+}
+
+.App-logoWrap {
+    padding-right: 1rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {}
+
+.App-header {
+    padding: 1rem;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
