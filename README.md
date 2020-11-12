@@ -8,17 +8,27 @@ This DApp Starter Uses [Hardhat](https://hardhat.org/) for base tooling, testing
 
 ## Deployments
 
-### Localhost
+For Deployments, you'll need to create a new file `.env.js` based on .env_sample.js and fill in the desired wallet mnemonic and account numbers that will be used to sign the deployment. These values are referenced in the hardhat.config.js file. 
 
-`npx hardhat node`
-`npx hardhat --network localhost deploy`
+`npx hardhat --network [network key in config] build`
 
-### Rinkeby
+eg:
+`npx hardhat --network rinkeby build`
 
-For Rinkeby Deployments, you'll need to create a new file `.env.js` based on .env_sample.js and fill in the desired wallet mnemonic and account numbers that will be used to sign the deployment. These values are referenced in the hardhat.config.js file. 
+`npx hardhat --network localhost build`
 
-Depending on what you're doing, you may need to edit these configurations.
+### Working Locally
+
+To work locally, you can use Hardhat's local node.
+
+You can launch with the --show-accounts flag so you can grab an account and import it into MetaMask for local testing.
+
+NOTE: If you've just deployed your contract, you should go to MetaMask -> settings -> reset account to clear the history and reset the account nonce.
+
+`npx hardhat node --show-accounts`
 
 ## WebApp
+
+The WebApp is a starter Create React App with some added libs and conveniences.
 
 The webapp is part of this repository for convenience only; it can easily be put into its own repo if you prefer.
